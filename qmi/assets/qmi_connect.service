@@ -1,0 +1,13 @@
+[Unit]
+Description=QMI Connection
+
+[Service]
+WorkingDirectory=/usr/local/qmi/
+ExecStart=/usr/local/qmi/qmi_connect.sh
+SyslogIdentifier=qmi_lte
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
+
